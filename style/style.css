@@ -1,0 +1,52 @@
+nav {
+    background-color: #fafafa;
+}
+
+.search-input {
+    width: 280px;
+}
+
+.search-input span {
+    background-color: #ffffff;
+}
+
+.search-input input {
+    padding: 10px 20px;
+}
+
+.login-button a {
+    padding: 10px 20px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    background-color: rgba(90, 79, 207, 0.1);
+    color: #5A4FCF;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+a:after {
+    position: absolute;
+    width: 100%;
+    content: '';
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1);
+}
