@@ -1,5 +1,6 @@
 nav {
     background-color: #fafafa;
+    font-family: 'Poppins', sans-serif;
 }
 
 .search-input {
@@ -12,6 +13,11 @@ nav {
 
 .search-input input {
     padding: 10px 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #858585;
 }
 
 .login-button a {
@@ -29,24 +35,30 @@ nav {
     line-height: 24px;
 }
 
-a:after {
-    position: absolute;
-    width: 100%;
-    content: '';
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #0087ca;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
+.nav-link {
+    font-style: bold;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
 }
 
-a:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-    -webkit-transform: scaleX(1);
-    -moz-transform: scaleX(1);
-    -ms-transform: scaleX(1);
-    -o-transform: scaleX(1);
+.nav-link:hover {
+    opacity: 1;
+}
+
+.nav-link::before {
+    transition: 300ms;
+    height: 3px;
+    content: "";
+    position: absolute;
+    background-color: #5A4FCF;
+}
+
+.nav-link-ltr::before {
+    width: 0%;
+    bottom: 20px;
+}
+
+.nav-link-ltr:hover::before {
+    width: 70px;
 }
